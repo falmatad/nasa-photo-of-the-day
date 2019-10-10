@@ -9,7 +9,10 @@ export default function DataToItem() {
   const [description, setDescription] = useState([]);
   const [date, setDate] = useState();
 
-  const handleChange = e => setDate(e.target.value);
+  const handleChange = e => {
+    console.log(e.target.value);
+    return setDate(e.target.value)
+  }
   useEffect(() => {
     axios
       .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${date}`)
