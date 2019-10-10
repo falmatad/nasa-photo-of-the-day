@@ -3,8 +3,8 @@ import React from "react";
 const DateInput = props => {
   return (
     <div className="date-card " >
-        Enter Date: <input type="text" id="myText" value="YYYY-DD-MM"></input>
-        <button onClick={props.setDate(myText.value)}>Enter</button>
+        <input type="date" value={props.date} onChange={props.handleChange} />
+      <h2>date: {props.date}</h2>
     </div>
   );
 };

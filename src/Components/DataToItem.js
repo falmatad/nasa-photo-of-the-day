@@ -7,11 +7,9 @@ import DateInput from "./DateInput";
 export default function DataToItem() {
   const [imageData, setImageData] = useState([]);
   const [description, setDescription] = useState([]);
-  const [date, setDate] = useState("YYYY-DD-MM");
-//   function myFunction(textInput) {
-//     setDate(value);
-//   }
+  const [date, setDate] = useState();
 
+  const handleChange = e => setDate(e.target.value);
   useEffect(() => {
     axios
       .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${date}`)
@@ -27,7 +25,7 @@ export default function DataToItem() {
     <div className="container">
         <ImageCard image = {imageData.hdurl} title= {imageData.title}/>
         <ParagraphCard description = {description}/>
-        <DateInput setDate= {setDate}/>
+        <DateInput handleChange= {handleChange} date = {date}/>
     </div>
   );
 }
