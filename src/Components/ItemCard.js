@@ -4,6 +4,8 @@ import React from "react";
 //   CardTitle, CardSubtitle
 // } from 'reactstrap';
 const ImageCard = props => {
+  if (!props.image) return <h3>Loading...</h3>;
+
   return (
     <div className="item-card">
         <h1>{props.title}</h1>
