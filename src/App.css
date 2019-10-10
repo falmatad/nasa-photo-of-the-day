@@ -1,3 +1,11 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+  background-color: #56a9ad;
+  background-image: url("https://wallpaperaccess.com/full/366025.jpg");
+  padding: 0;
+  margin: 0;
+}
 .App {
   text-align: center;
 }
@@ -30,4 +38,54 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  background: #8db4ca;
+  /* width: 100%; */
+  max-width: 850px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  box-shadow: 0px 1px 6px -2px grey;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.item-card {
+  color: black;
+  width: 700px;
+  max-height: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0px 1px 6px -2px grey;
+  padding-bottom: 4px;
+}
+
+.item-image {
+  width: 680px;
+  height: 500px;
+  flex-shrink: 1;
+}
+h1 {
+  color: #474747;
+  font-size: 25px;
+  background: #2eb29a;
+  margin: 0;
+  padding: 10px;
+}
+p {
+  color: #474747;
+  font-size: 16px;
+  background: #2eb29a;
+  margin: 0;
+  padding: 10px;
 }
