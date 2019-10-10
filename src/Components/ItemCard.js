@@ -1,5 +1,8 @@
 import React from "react";
-
+// import {
+//   Card, CardImg, CardText, CardBody, CardLink,
+//   CardTitle, CardSubtitle
+// } from 'reactstrap';
 const ImageCard = props => {
   return (
     <div className="item-card">
